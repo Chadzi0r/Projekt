@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Silniki BMW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="blok1">
+        <header id="naglowek">
+            <img src="banner.png" alt="banner"><br>
+            <button id="motyw" onclick="zmienMotyw()">Zmien motyw!</button><br><br>
+            
+        </header>
+    </div>
+    <div id="blok2">
+        
+       <div id="login1">
+                <input type="text" id="LoginInput" placeholder="Wpisz swój login"><br>
+            </div>
+            <button id="LoginButton" onclick="zaloguj()">Zaloguj się</button>
+        <div id="samochod">
+            <img src="bmw.jpg" alt="bmw" id="e36">
+            <p id="cytatDnia"></p>
+        </div>
+        <select id="mojeSilniki" onchange="pokazZdjecie()">
+            <option value="">Wybierz Silnik</option>
+        </select>
+        <br>
+        <div id="silnik">
+            
+        </div>
+        <img id="obrazek" src="" style="display:none; width:300px;">
+        <table id="tabela-silnikow">
+            <thead>
+                <tr>
+                    <th>Kod Silnika</th>
+                    <th>Pojemność</th>
+                    <th>Rodzaj Paliwa</th>
+                </tr>
+            </thead>
+            <tbody id="body-tabeli"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
